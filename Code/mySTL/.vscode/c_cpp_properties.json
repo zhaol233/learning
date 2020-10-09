@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 ".",
-                //"..",
+                "..",
                 "~/cpp_ws/Code/mySTL/**"
             ],
             "defines": [],

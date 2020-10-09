@@ -18,7 +18,7 @@ public:
     }
 };
 
-void print(int i,int j)//普通函数对象
+void print(int i,int j)  //普通函数对象
 {
     if (i > j){
         cout << i << " ";
