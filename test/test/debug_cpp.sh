@@ -1,6 +1,6 @@
 #! /bin/bash
 echo "start debug"
-g++ $1
+g++ test1.cpp
 echo "---------running--------------"
 echo ""
 ./a.out
