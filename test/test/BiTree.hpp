@@ -4,7 +4,7 @@
 
 namespace BiTree{
 /**
- * 二叉树的链式存储结构
+ * 二叉树的链式存储结构(两节点)
  * */
 typedef struct BiTNode{
     ElemType data;
@@ -41,10 +41,34 @@ typedef struct CSNode{
 }CSNode,*CSTree;
 
 /**
+ * 单棵树二叉树的初始化(递归)
+ **/
+int Initiate(BiTree &T){
+    BiTree p = T;
+    std::cout<<"Plea Input The Num"<<std::endl;
+    std::cin>>T->data;
+    if(T->data == 0){
+        //&T = NULL;
+        delete T;
+        return 0;
+    }
+    T->lchild = new BiTNode;
+    T->rchild = new BiTNode;
+    Initiate(T->lchild);
+    Initiate(T->rchild);
+    T = p;
+    return 0;
+}
+
+/**
  * 二叉树的先序遍历
  * */
 void PreOrder(BiTree &T){
-
+    if(T->data && T->lchild && T->rchild){
+        std::cout<<T->data<<std::endl;
+        PreOrder(T->lchild);
+        PreOrder(T->rchild);
+    }
 }
 
 /**
