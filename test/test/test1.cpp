@@ -3,6 +3,7 @@
 #include"LinkList.hpp"
 #include"Stack.hpp"
 #include"BiTree.hpp"
+#include"Queue.hpp"
 
 
 using namespace std;

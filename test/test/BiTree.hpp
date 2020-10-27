@@ -11,9 +11,7 @@ typedef struct BiTNode{
     struct  BiTNode *lchild,*rchild;
 }BiTNode, *BiTree;
 
-/**
- * 线索二叉树
- * */
+/* 线索二叉树 */
 typedef struct ThreadNode{
     ElemType data;
     struct ThreadNode *lchild,*rchild;
